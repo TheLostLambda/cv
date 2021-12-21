@@ -1,0 +1,363 @@
+/The Grand 2019 CV Rewrite/
+
+* General Approach
+I'll create a dynamic CV. I'm going to think of everything that I've ever done /
+made / been awarded that I'm proud of, and I'll flesh out the details. I'll
+include a one-line summary (probably the section title), when and where it was,
+what I did (what type of experience), and what I gained from the experience
+(specific skills and general reflection). Wherever possible, I should link some
+tangible proof.
+
+I'll sort these CV items into general categories based on the skills they
+demonstrate, and when it comes time to share my CV on an application, I'll take
+only the most relevant categories and selectively reduce (to the one-line) the
+less relevant experiences, to highlight the most relevant ones. This way I can
+produce a CV tailored to a particular application without needing to write
+anything new or creating conflicting versions.
+* Experiences, Projects, and Awards
+** Computer Science
+  - Website / Server [thelostlambda.xyz]
+  - PRA Robotics (AVC and QWERTY) [https://github.com/PRA-Robotics/teamcode/blob/avc/auto/AVCGoToGoal.java]
+  - FTC_HTTP [http://bit.ly/ftc_http_video]
+  - iGEM OpenLUX Firmware
+  - Hackback / ShefESH
+  - Hack Sheffield
+  - PRA Student Scheduler and Club Sorter
+** Engineering
+  - iGEM OpenLUX electronics & some CAD
+** Biology
+  - Two summers at Avidity Biotech
+  - Capstone Project
+  - Events and talks at Denver Biolabs (CRISPR & Bioinformatics)
+  - Bioinformatics at DBL and with MedTech
+** Teaching
+  - Cookies and Code python teaching sessions
+  - Bionics society python class + Arduino
+  - PRA Robotics spring training
+** Statistics
+  - Pokestats [https://thelostlambda.github.io/pokestats/]
+** Report Writing
+  - Build a planet project?
+  - Viscoelastic Report
+  - Tissue who
+  - Under Pressure? (prolly not)
+  - Capstone?
+** Posters / Presentations:
+  - iGEM Newcastle Designer Biology Symposium
+  - Lost in Translation
+** Writing:
+  - Regicide of the Fisher King [https://drive.google.com/file/d/1Zbv23ObvSyYZoG71JNedk-emwJxVWR36/view] 
+** Art?:
+  - Photography
+** Eduction
+  - First year Bioengineer (89.25%)
+  - Prospect Ridge Academy (4.741 / 4.0)
+    - AP 5's in:
+      - Calc BC
+      - Chemistry
+      - Physics C: Elect and Magnetism
+      - Physcis C: Mechanics
+      - Statistics
+      - Biology
+      - Calc AB
+      - Computer Science A
+      - English Language & Comp
+      - United States Government and Politics
+    - 4's in
+      - United States History
+      - English Lit & Comp
+    - Summa Cum Laude
+    - National AP Scholar
+    - National Honor Society (2017 & 2018)
+    - Prospect Ridge Academy High Honor Roll (2015-2018)
+    - Best communicated solution during EWB Global Engineering Challenge (2019)
+    - Design award and Finalist Alliance at FTC State Championship (2017 & 2018)
+    - Won 2nd in Junior Energy and Transportation at CSEF (2014)
+    - Won 1st in Alternative Fuels at Denver Metro Science Fair (2014)
+    - Linnaeus Award for Excellence in Biology (2018)
+    - Hacker Award for Excellence in Computer Science (2018)
+    - First Place Award for Senior Capstone Project (2018)
+    - Sir Harold West Award (2019) (Awarded to 8 first-year engineers)
+    - Best Presentation in the UK iGEM + Talk at design biology symposium (2019) [design-biology.org]
+  - Denver Biolabs
+    - Designed basic genetic circuits using BioBricks
+    - Deep dive into CRISPR and applications
+    - Speaker on clinical microbiology and pathogen culturing
+* Rough Notes
+  - Shorten educational section
+  - Make long and sort versions
+  - Talk about what I learned from each placement
+  - Weighted avg for first uni year
+  - Talk about what the placements / experiences that I had
+  - years for things
+  - References
+  - Societies
+  - Cookies and Code
+  - Interests / Skills
+  - Reverse chronological
+  - Toss in some colour, shapes, and iconography
+  - Grey slate bg, underlined and coloured headers
+* Structure
+** Header
+  - Brooks J Rady [Big L]
+  - Tagline / Roll (Change this depending on application) [Small L]
+  - Sheffield, UK [R]
+  - b.j.rady@gmail.com [R]
+  - +44 7413 390609 [R]
+** Objective & Tagline
+A perpetually curious student with a keen interest in molecular biology and
+computer science. Seeking to engage in research and work alongside the
+professionals in the field to further my own skill-set.
+** Formal Education
+*** Structure
+*Degree / Institution* (Years)
+    /Mark(s)/
+    /Awards/
+*** Molecular Biology at The University of Sheffield
+**** Years
+  - 2019-Current
+**** Marks
+  - Prospective Mark: 1^st Class Honours
+*** Bioengineering at The University of Sheffield
+**** Years
+  - 2018-2019
+**** Marks
+  - Weighted Average: 89.25%
+**** Awards
+  - Received the Sir Harold West Award
+*** Prospect Ridge Academy
+**** Years
+  - 2014-2018
+**** Marks:
+  - GPA: 4.741 (4.00)
+**** Awards
+  - Graduated Summa Cum Laude
+  - Received National AP Scholar Award
+  - Received First Place for Senior Capstone Project
+** Experience
+  - Jobs
+  - Placements
+  - Volunteering
+  - Workshops
+*** Structure
+*ROLE / Project* (Years)
+_/Type at Organisation, Location/ or /Type — Link/_
+Quick description of the role
+    - Awards
+    - Skills gained
+    - Reflections?
+*** Presentations & Writing
+**** Viscoelastic Report
+***** Info
+  - Project :: Creepy Phenomena — An Investigation of Viscoelasticity
+  - Year :: 2019
+  - Type :: Scientific Report
+  - Link :: http://bit.ly/2PkNP2b
+***** Description
+As part of a university physics course, I wrote a report analysing an
+experimental video showcasing a particular viscoelastic model. Working backwards
+from only the video and the volume of the syringe, the fundamental constants of
+the system were calculated.
+***** Skills
+  - Used maths and statistics to model a physical system
+  - Demonstrated writing and problem solving skills
+  - Created a report using LaTeX, R, and Knitr
+**** Lost in Translation
+***** Info
+  - Project :: Lost in Translation — What Happens to Proteins After Expression?
+  - Year :: 2019
+  - Type :: Scientific Poster
+  - Link :: http://bit.ly/36bKMPG
+***** Description
+Scanning the literature, I stockpiled information regarding the
+post-translational modification and trafficking of proteins. From this body of
+research, I picked out the most important points to be presented as part of the
+poster — striking the balance between rigour and brevity.
+***** Skills
+  - Selected key points from a large body of research
+  - Demonstrated a competency in graphical design
+  - Elucidated the connections between concepts 
+*** Biology
+**** Avidity
+***** Info
+  - Role :: Assistant Researcher
+  - Years :: 2016-2017
+  - Type :: Summer Placement
+  - Organisation :: Avidity LLC
+  - Location :: Colorado, USA
+***** Description
+During my time at Avidity, I designed a set of DNA tethers for use in
+multiplexed pathogen assays, worked on a directed evolution project, and
+explored the manufacture of lateral flow assays on an aluminium surface.
+***** Skills
+  - Developed extensive wet-lab and digital biology skills
+  - Gained experience with recombinant DNA technologies
+  - Showcased an aptitude for independent research
+*** Engineering & Computer Science
+**** iGEM
+***** Info
+  - Role :: Software Lead & Co-Presenter
+  - Year :: 2019
+  - Type :: Team Member
+  - Organisation :: University iGEM
+  - Location :: Sheffield, UK
+***** Description
+The International Genetically Engineered Machine Competition (iGEM) is a
+synthetic biology competition involving universities from around the globe. Our
+team made a low-cost, open-source microplate reader. I developed the software
+that powered our device and presented our project at the Jamboree in Boston,
+USA.
+***** Skills
+  - Designed custom sensor and control electronics
+  - Developed firmware for an ESP32 using C
+  - Built a web-interface using HTML, CSS, and JS
+  - Exercised team communication and planning skills
+  - Awarded Best Presentation in the UK
+**** PRA Robotics
+***** Info
+  - Role :: Founder of PRA Robotics
+  - Year :: 2014-2018
+  - Organisation :: Prospect Ridge Academy
+  - Location :: Colorado, USA
+***** Description
+The PRA robotics team competed in both the First Tech Challenge (FTC) and the
+Autonomous Vehicle Competition (AVC). The team has now grown to several dozen
+members and continues foster students' interest in robotics.
+***** Skills
+  - Led software development for both FTC and AVC
+  - Ran Java programming workshops for new recruits
+  - Competed as finalists in the FTC State Championship
+  - Developed skills in autonomous robot control
+  - Showed leadership skills by managing a large team
+**** =FTC_HTTP=
+***** Info
+  - Project :: =FTC_HTTP=: Wireless FTC Robot Programming Tool
+  - Year :: 2017
+  - Type :: Cross-platform CLI Application
+  - Link :: http://bit.ly/ftc_http
+***** Description
+FTC teams used to be forced to choose between two programming toolchains: either
+a 5GB+ install and minute-long programming cycles, or an under-featured
+web-interface prone to code loss. By reverse engineering the web protocol,
+FTC\_HTTP allows wireless development from any text-editor, on any platform, in
+less than 8MB.
+***** Skills
+  - Reverse engineered an undocumented protocol
+  - Created a polished, cross-platform application
+  - Demonstrated skills in Rust, HTTP, and Git
+  - Produced documentation and a video tutorial
+  - Shared the application with others during FTC events
+**** Python Workshops
+***** Info
+  - Role :: Programming Mentor & Workshop Instructor
+  - Years :: 2018-Current
+  - Type :: Volunteer Teaching
+  - Organisation :: The University of Sheffield
+  - Location :: Sheffield, UK
+***** Description
+For the past couple of years I've been either helping to teach Python via
+organisations like Cookies and Code, or have been running programming workshops
+for the Sheffield Bionics Society. I've been both an entry-level and advanced
+instructor, working with both individuals and large groups.
+***** Skills
+  - Communicated complex concepts understandably
+  - Demonstrated organisational and interpersonal skills
+  - Developed existing skills in computer programming
+  - Helped others leverage computation in their research
+** Additional Work
+*** Computer Science
+   - Website / Server [thelostlambda.xyz]
+*** Biology
+   - Capstone Project
+*** Statistics
+   - Pokestats [https://thelostlambda.github.io/pokestats/]
+*** Report Writing
+   - Build a planet project?
+   - Tissue who
+   - Under Pressure? (prolly not)
+*** Writing:
+   - Regicide of the Fisher King [https://drive.google.com/file/d/1Zbv23ObvSyYZoG71JNedk-emwJxVWR36/view] 
+** Additional Awards & Certificates
+    - National Honor Society (2017 & 2018)
+    - Prospect Ridge Academy High Honor Roll (2015-2018)
+    - Best communicated solution during GEC (2019)
+    - Design award and Finalist Alliance at FTC State Championship (2017 & 2018)
+    - Won 2nd in Junior Energy and Transportation at CSEF (2014)
+    - Won 1st in Alternative Fuels at Denver Metro Science Fair (2014)
+    - Linnaeus Award for Excellence in Biology (2018)
+    - Hacker Award for Excellence in Computer Science (2018)
+    - First Place Award for Senior Capstone Project (2018)
+** Hobbies & Interests
+I'm into things that byte. When I'm not programming or fiddling with one of my
+computers, I treat myself myself to some video games. I've built the desktop
+computer that I play games on and have helped a number of others do the
+same. Since coming to Uni, I've also developed an interest in cybersecurity and
+have joined the Sheffield Ethical Student Hackers.
+
+Aside from computers, I've recently taken up photography. I can't draw to save
+my life, but I think I've gotten rather good at stealing art from
+nature. Photography for me is a fun blend of technical knowledge and artistic
+challenge.
+
+Finally, I love to read and to write. I often end up doing lots of technical
+reading as a consequence of my computer science hobby, but certainly enjoy an
+awful Fantasy novel when I can find the time for it.
+** Footer
+  - http://thelostlambda.xyz
+  - https://www.linkedin.com/in/bjrady/
+  - References: Stephane and Caswell
+* For Submission
+  1) Cut irrelevant experience
+  2) Less important experience can be shortened
+  3) Change the objective
+  4) Pick a light or dark theme
+* Notes From / For Grace
+** Feedback
+ - The education section could benefit from some structure. The weighted
+   average and University bits are a bit ambiguous. They are on the same level
+   as St Bedes College. Did you score St. Beades, or attend an average?
+ - Use a single hyphen for date ranges (-) not an em dash (—)?
+ - Currently flows well when you read everything in a section, but might help
+   to categorise things. Like having all of the skills from an experience in
+   one place, all of the responsibilities, etc. I might be chatting rubbish though
+ - Titles of the positions, the "2019 Sales Representative, Annotated Studios"
+   would benefit from a bolding or underline. They are hard to pick out at a
+   glance (they can look like a wrapped bullet-point)
+ - Global Engineering challenge is inconsistent with things like Student
+   Ambassador, the description isn't part of a bullet like most other details
+ - "Staff the help desk" should be "Staffed the help desk?"
+ - ‘palyable city’ -> playable city?
+ - Space between Mobile number and colon? "Mobile:07..." -> "Mobile: 07...
+ - Missing apostrophe in "This years project is to organize and deliver a
+   public...", should be "This year's..."
+ - The bold thing for skills is really good. I suppose that less is more for
+   applications, so everything on the CV should be relevant and justified. This
+   is done well overall, but places like "2017, Lourdes Volunteer" could be cut
+   in some cases, giving you more words for the more relevant volunteering
+   experiences.
+ - "help work on the prototypes and" Capitalise "Help"
+ - Formatting-wise, Science Alive is a little lonely (title in one column,
+   everything else in the second)
+ - Probably a couple more small things, I would focus on some proof-reading and
+   consistency, but overall a very good CV. Lots of experience that is well
+   explained and impressive.
+ - Pick a sharp and easy to read font
+** Sections
+ - Objective
+ - Education
+ - Achievements
+ - Volunteering
+ - Societies
+ - Interests
+*** Header & Footer
+ - Name
+ - Email
+ - Mobile Number
+ - References
+** Self-Notes
+ - I should toss in a bit of humour
+ - Be consistent with formatting!
+* Queue
+  1) Python Workshops
+  2) Lost in Translation
+  3) FTC HTTP

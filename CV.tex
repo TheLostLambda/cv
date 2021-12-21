@@ -1,0 +1,297 @@
+%\nonstopmode
+\documentclass[twocolumn, a4paper, fontsize=9pt, headsepline, footsepline]{scrartcl}
+\usepackage[
+  top=25mm,
+  bottom=19mm,
+  left=13mm,
+  right=13mm,
+  headheight=15mm,
+]{geometry}
+\setlength{\footheight}{12mm}
+\usepackage[hidelinks]{hyperref}
+
+% Change the theme here (light, dark, BW, blue, green)
+\usepackage{tagging}
+\usetag{##THEME##}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Montserrat}
+\setmonofont[Scale=0.9]{IBM Plex Mono}
+
+\setlength{\parindent}{5mm}
+
+\usepackage{setspace}
+\RedeclareSectionCommands[
+  beforeskip=2mm plus 1mm minus 1mm,
+  afterskip=1.5mm plus 1mm minus 1mm
+]{section,subsection}
+
+\setkomafont{pagehead}{\normalfont}
+\setkomafont{section}{\Large\bfseries}
+\setkomafont{subsection}{\normalsize}
+
+\usepackage{scrlayer-scrpage}
+\usepackage{fontawesome}
+\renewcommand*{\faicon}[1]{\makebox[1.5em][c]{\csname faicon@#1\endcsname}}
+\ihead{\Huge Brooks J Rady \\\large Student at The University of Sheffield}
+\ohead{Sheffield, UK\hspace{2mm}\faMapMarker \\ +44 7413 390609\hspace{2mm}\faPhoneSquare \\ b.j.rady@gmail.com\hspace{2mm}\faEnvelopeSquare}
+\cfoot{}
+\ifoot{\textbf{REFERENCES}\\\footnotesize Mr. Vernon Caswell, AP Computer Science Teacher
+  at PRA <vcaswell@prospectridgeacademy.org>\\ Dr. Stephane Mesnage,
+  Microbiologist at The University of Sheffield <s.mesnage@sheffield.ac.uk>}
+\ofoot{linkedin.com/in/bjrady/\hspace{2mm}\faLinkedinSquare\\thelostlambda.xyz\hspace{2mm}\faGlobe}
+
+\ModifyLayer[addvoffset=-1mm]{scrheadings.foot.above.line}
+\ModifyLayer[addvoffset=-1mm]{plain.scrheadings.foot.above.line}
+\ModifyLayer[addvoffset=1mm]{scrheadings.head.below.line}
+\ModifyLayer[addvoffset=1mm]{plain.scrheadings.head.below.line}
+
+\usepackage{xcolor}
+\definecolor{bg}{RGB}{40,40,40}
+\definecolor{fg}{RGB}{200,200,200}
+\definecolor{rot}{RGB}{244,96,54}
+\definecolor{lila}{RGB}{181,68,110}
+\definecolor{hellblau}{RGB}{10,205,187}
+\definecolor{grun}{RGB}{112,174,110}
+\tagged{BW}{\definecolor{rot}{RGB}{0,0,0}}
+\tagged{BW}{\definecolor{lila}{RGB}{0,0,0}}
+\tagged{BW}{\definecolor{hellblau}{RGB}{0,0,0}}
+\tagged{BW}{\definecolor{grun}{RGB}{0,0,0}}
+\tagged{green}{\definecolor{rot}{RGB}{122, 199, 76}}
+\tagged{green}{\definecolor{lila}{RGB}{122, 199, 76}}
+\tagged{green}{\definecolor{hellblau}{RGB}{122, 199, 76}}
+\tagged{green}{\definecolor{grun}{RGB}{122, 199, 76}}
+\tagged{blue}{\definecolor{rot}{RGB}{99, 121, 134}}
+\tagged{blue}{\definecolor{lila}{RGB}{99, 121, 134}}
+\tagged{blue}{\definecolor{hellblau}{RGB}{99, 121, 134}}
+\tagged{blue}{\definecolor{grun}{RGB}{99, 121, 134}}
+\tagged{dark}{\pagecolor{bg}}
+\tagged{dark}{\color{fg}}
+
+\usepackage{soul}
+
+\usepackage{enumitem}
+\setlist{nosep}
+
+\begin{document}
+\setulcolor{rot}
+\setul{}{2pt}
+\section*{\ul{OBJECTIVE}}
+\noindent
+A perpetually curious student with a keen interest in molecular biology and
+computer science. Seeking to engage in research and work alongside professionals
+in the field to further mankind's understanding of the world.
+
+\setulcolor{lila}
+\section*{\ul{FORMAL EDUCATION}}
+\subsection*{Molecular Biology at The University of Sheffield (2019-2023)}
+\onehalfspacing
+\emph{Prospective Mark: 1\textsuperscript{st} Class Honours}
+
+\subsection*{Bioengineering at The University of Sheffield (2018-2019)}
+\onehalfspacing
+\emph{Weighted Average: 89.25\%}\par
+\emph{Received the Sir Harold West Award}
+
+\subsection*{Prospect Ridge Academy High School (2014-2018)}
+\onehalfspacing
+\emph{GPA: 4.741 (4.00)}\par
+\emph{Graduated Summa Cum Laude}\par
+\emph{Received National AP Scholar Award}\par
+\emph{Received First Place for Senior Capstone Project}
+
+\setulcolor{grun}
+\section*{\ul{EXPERIENCE}}
+
+\subsection*{Software Lead \& Co-Presenter (2019)\\\textmd{\emph{Member of the
+    University iGEM Team, Sheffield UK}}}
+\noindent
+iGEM is a synthetic biology competition involving universities from around the
+globe. Our team designed a low-cost, open-source microplate reader for use in
+community labs. I developed the software that powered our device and presented
+our project at the Jamboree in Boston, Massachusetts.
+\begin{itemize}
+\item Designed custom sensor and control electronics
+\item Developed firmware for an ESP32 using C
+\item Built a web-interface using HTML, CSS, and JS
+\item Exercised team communication and planning skills
+\item Awarded Best Presentation in the UK
+\item Won Best Open Project and Gold Medal in Boston
+\end{itemize}
+
+\subsection*{Programming Mentor \& Workshop Instructor
+  (2018-Current)\\\textmd{\emph{Volunteer Teaching at the University, Sheffield UK}}}
+\noindent
+For the past couple of years I've been either helping to teach Python via
+organisations like Cookies and Code, or have been running programming workshops
+for the Sheffield Bionics Society. I've been both an entry-level and advanced
+instructor, working with both individuals and large groups.
+\begin{itemize}
+\item Communicated complex concepts understandably
+\item Demonstrated organisational and interpersonal skills
+\item Developed existing skills in computer programming
+\item Helped others leverage computation in their research
+\end{itemize}
+
+\subsection*{Lost in Translation: Proteins Post-Expression (2019)\\\textmd{\emph{Scientific Poster} — \url{http://bit.ly/36bKMPG}}}
+\noindent
+Scanning the literature, I stockpiled information regarding the
+post-translational modification and trafficking of proteins. From this body of
+research, I picked out the most important points to be presented as part of the
+poster — striking the balance between rigour and brevity.
+\begin{itemize}
+\item Selected key points from a large body of research
+\item Demonstrated a competency in graphical design
+\item Elucidated the connections between concepts 
+\end{itemize}
+
+\subsection*{Creepy Phenomena: An Investigation of Viscoelasticity
+  (2019)\\\textmd{\emph{Scientific Report} — \url{http://bit.ly/2PkNP2b}}}
+\noindent
+As part of a university physics course, I wrote a report analysing an
+experimental video showcasing a particular viscoelastic model. Working backwards
+from only the video and the volume of the syringe, the fundamental constants of
+the system were calculated.\par
+\begin{itemize}
+\item Used maths and statistics to model a physical system
+\item Demonstrated writing and problem solving skills
+\item Created a report using LaTeX, R, and Knitr
+\end{itemize}
+
+\subsection*{Founder of PRA Robotics (2014-2018)\\\textmd{\emph{Prospect Ridge
+    Academy, Colorado USA}}}
+\noindent
+The PRA robotics team competed in both the First Tech Challenge (FTC) and the
+Autonomous Vehicle Competition (AVC). The team has now grown to several dozen
+members and continues foster students' interest in robotics.
+\begin{itemize}
+\item Led software development for both FTC and AVC
+\item Ran Java programming workshops for new recruits
+\item Competed as finalists in the FTC State Championship
+\item Developed skills in autonomous control engineering
+\item Showed leadership skills by managing a large team
+\end{itemize}
+
+\subsection*{\textbf{\texttt{FTC\_HTTP}}: Wireless FTC Robot Programming Tool
+  (2017)\\\textmd{\emph{Cross-platform CLI Application} — \url{http://bit.ly/ftc_http}}}
+\noindent
+FTC teams used to be forced to choose between two programming toolchains: either
+a 5GB+ install and minute-long programming cycles, or an under-featured
+web-interface prone to code loss. By reverse engineering the web protocol,
+\texttt{FTC\_HTTP} allows wireless development from any text-editor, on any platform, in
+less than 8MB.
+\begin{itemize}
+\item Reverse engineered an undocumented protocol
+\item Created a polished, cross-platform application
+\item Demonstrated skills in Rust, HTTP, and Git
+\item Produced documentation and a video tutorial
+\item Shared the application with others during FTC events
+\end{itemize}
+
+\subsection*{Assistant Researcher (2016-2017)\\\textmd{\emph{Summer Placement at Avidity LLC, Colorado USA}}}
+\noindent
+During my time at Avidity, I designed a set of DNA tethers for use in
+multiplexed pathogen assays, worked on a directed evolution project, and
+explored the manufacture of lateral flow assays on an aluminium surface.
+\begin{itemize}
+\item Developed extensive wet-lab and digital biology skills
+\item Applied recombinant DNA technologies
+\item Showcased an aptitude for independent research
+\end{itemize}
+
+% DIRTY CHUNK !!!
+
+Add stuff about Bionics here (taught programming, electronics, and design)
+
+Ethical Hacking, more teaching experience in Cyber security / Linux fields
+
+Exercism is a nice bit of open source teaching and programming work
+
+Zellij is my primary open-source project now – lots of good, international
+teamwork
+
+Avalon was some electrical engineering experience and practice making PCBs
+
+Evolutor is my engineering magnum opus so far, 3D design, electronics, and software
+
+Add my nationality somewhere (so people know I'm international status)
+
+Add languages as well (mostly just English, obviously, but with a bit of German)
+
+Other open-source stuff could be worth mentioning...
+
+Starting up iGEM again is something that's noteworthy!
+
+PGFinder work + Graph Generator + MS/MS pipeline with Mesnage
+
+Project Hex, more engineering / robotics / programming
+
+PAL teaching of biology to first-year students
+
+MBB society as academic officer (working with staff)
+
+Growbotics work is an in to the plant side of things!
+
+Add both new essays (Rhizobia & Hydrolases)
+
+Academic Awards:
+  - Paul Hancock Prize (Best overall mark in L2 practical module)
+  - Valerie Broomhead Prize (Best overall mark in L1 practical module)
+
+% END DIRTY CHUNK
+
+\onecolumn
+\setulcolor{hellblau}
+\section*{\ul{ADDITIONAL WORK}}
+\subsection*{Personal Web Server (2015-Current)\\\textmd{\emph{File-Sync, VPN,
+    DLNA, FTP, Games, and Website} — \url{http://thelostlambda.xyz/}}}
+\subsection*{Sickle Cell Disease: Symptoms, Molecular Basis, and Treatments
+(2019)\\\textmd{\emph{A Review Focused on Sickle Cell Pathogenesis} — \url{http://bit.ly/2E7Yu9x}}}
+\subsection*{Tissue Who? — A Foray into Histology and Tissue Identification
+  (2019)\\\textmd{\emph{A Short Histology Primer \& Lab Report} —
+    \url{http://bit.ly/2ooernJ}}}
+\subsection*{Under Pressure — Hydrostatics and Elastic Tube Distention
+  (2019)\\\textmd{\emph{Modelling a Biophysical System from Data} — \url{http://bit.ly/2qMQmYA}}}
+\subsection*{In Vivo Detection and Signaling of Arbitrary DNA Sequences
+  (2018)\\\textmd{\emph{Highschool Capstone Project Exploring a Novel Use for
+    CRISPR} — \url{http://bit.ly/2pbA9fk}}}
+\subsection*{Pokéstats — What Type Of Pokemon Is The Match For You?
+  (2018)\\\textmd{\emph{A Statistical Report Exploring a Large Pokémon Dataset} — \url{http://bit.ly/2FVjMqh}}}
+\subsection*{The Regicide of the Fisher King (2018)\\\textmd{\emph{AP English
+    Literature Modernism Essay} — \url{http://bit.ly/2FHoYSy}}}
+\subsection*{Honors Physics “Build a Planet” Project (2017)\\\textmd{\emph{Exploring and
+    Mathematically Modelling the Physics of a Fictional Planet} — \url{http://bit.ly/2IA9f5F}}}
+\setulcolor{rot}
+\section*{\ul{SELECTED AWARDS \& CERTIFICATES}}
+\begin{itemize}
+\item Won Best Open Project \& Gold Medal during iGEM Jamboree (2019)
+\item Awarded Best Presentation during iGEM UK Meetup (2019)
+\item Best Communicated Solution during EWB Global Engineering Challenge (2019)
+\item Linnaeus Award for Excellence in Biology (2018)
+\item Hacker Award for Excellence in Computer Science (2018)
+\item National Honor Society (2017-2018)
+\item Prospect Ridge Academy High Honor Roll (2015-2018)
+\item Design Award \& Finalist Alliance at FTC State Championship (2017-2018)
+\item Second place in Junior Energy and Transportation at Colorado Science and
+  Engineering Fair (2014)
+\item First place in Alternative Fuels at Denver Metro Science Fair (2014)
+\end{itemize}
+\setulcolor{grun}
+\section*{\ul{HOBBIES \& INTERESTS}}
+\noindent
+I'm into just about anything that bytes. When I'm not fiddling with programming
+or one of my computers, I indulge myself in video games. I've built the computer
+I play games on and have helped a number of others do the same. Since coming to
+Uni, I've developed an interest in cybersecurity and have joined the Sheffield
+Ethical Student Hackers.
+
+Aside from computers, I've recently taken up photography. I can't draw to save
+my life, but I think I've gotten rather good at stealing art from
+nature. Photography for me is a fun blend of technical knowledge and artistic
+challenge.
+
+Finally, I love to read and to write. I often end up doing lots of technical
+reading as a consequence of my computer science hobby, but certainly enjoy an
+awful fantasy novel when I can find the time for it.
+\end{document}
+ 
