@@ -13,6 +13,9 @@
 % Change the theme here (light, dark, BW, blue, green)
 \usepackage{tagging}
 \usetag{##THEME##}
+% FIXME: I need to automate generation of the versions here!
+% Change what is included in the "EXPERIENCE" section (short, full, bio, comp)
+\usetag{short}
 
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Montserrat}
@@ -33,14 +36,15 @@
 \usepackage{scrlayer-scrpage}
 \usepackage{fontawesome}
 \renewcommand*{\faicon}[1]{\makebox[1.5em][c]{\csname faicon@#1\endcsname}}
+
 \ihead{\Huge Brooks J Rady \\\large Student at The University of Sheffield}
 \ohead{Sheffield, UK\hspace{2mm}\faMapMarker \\ +44 7413
   390609\hspace{2mm}\faPhoneSquare
   \\ b.j.rady@gmail.com\hspace{2mm}\faEnvelopeSquare} \cfoot{}
-\ifoot{\textbf{REFERENCES}\\\footnotesize Dr. Tuck Seng Wong, Lecturer in
-  Chemical \& Biological Engineering <t.wong@sheffield.ac.uk>\\ Dr. Stephane
-  Mesnage, Personal Tutor \& Lecturer in Microbiology
-  <s.mesnage@sheffield.ac.uk>}
+
+\ifoot{\textbf{REFERENCES}\\\footnotesize Dr. Stéphane Mesnage, Personal Tutor
+  \& Lecturer in Microbiology <s.mesnage@sheffield.ac.uk>\\ Dr. Tuck Seng Wong,
+  Lecturer in Chemical \& Biological Engineering <t.wong@sheffield.ac.uk>}
 \ofoot{linkedin.com/in/bjrady/\hspace{2mm}\faLinkedinSquare\\thelostlambda.xyz\hspace{2mm}\faGlobe}
 
 \ModifyLayer[addvoffset=-1mm]{scrheadings.foot.above.line}
@@ -88,7 +92,7 @@ in the field to further mankind's understanding of the world.
 \section*{\ul{FORMAL EDUCATION}}
 \subsection*{Molecular Biology at The University of Sheffield (2019-2022)}
 \onehalfspacing
-\emph{Weighted Average: 83.25\%}\par
+\emph{Weighted Average: 86.50\%}\par
 \emph{Received the Valerie Broomhead Prize}\par
 \emph{Received the Paul Hancock Prize}\par
 
@@ -107,24 +111,84 @@ in the field to further mankind's understanding of the world.
 \setulcolor{grun}
 \section*{\ul{EXPERIENCE}}
 
-\subsection*{Software Lead \& Co-Presenter (2019)\\\textmd{\emph{Member of the
-    University iGEM Team, Sheffield UK}}}
+\subsection*{Mechanical, Electrical, and Software Engineer
+  (2020-2021)\\\textmd{\emph{Bioreactor Development for Evolutor, Sheffield UK}}}
 \noindent
-iGEM is a synthetic biology competition involving universities from around the
-globe. Our team designed a low-cost, open-source microplate reader for use in
-community labs. I developed the software that powered our device and presented
-our project at the Jamboree in Boston, Massachusetts.
+Advised by Dr. Tuck Seng Wong from Chemical and Biological Engineering, I
+developed a compact, inexpensive prototype bioreactor optimised for carrying out
+directed / adaptive evolution in an automated fashion – allowing for the
+optimisation of industrially important microbe strains.
 \begin{itemize}
-\item Designed custom sensor and control electronics
-\item Developed firmware for an ESP32 using C
-\item Built a web-interface using HTML, CSS, and JS
-\item Exercised team communication and planning skills
-\item Awarded Best Presentation in the UK
-\item Won Best Open Project and Gold Medal in Boston
+\item Leveraged CAD to prototype a reactor from scratch
+\item Manufactured reactor components via 3D printing
+\item Developed custom sensor and control electronics
+\item Created a dashboard in Svelte for reactor monitoring
+\item Experimentally characterised device performance
+\item Integrated user feedback into the device design
 \end{itemize}
 
+\subsection*{Plant Growth Protocol Standardisation
+  (2020-2021)\\\textmd{\emph{Designer and Developer at Grobotic Systems, Sheffield UK}}}
+\noindent
+Grobotic Systems is one of many companies producing growth chambers for use in
+plant science; unfortunately, there is no standard for how the protocols run by
+these chambers should be written. I developed a human and machine readable
+protocol format that allows the same protocol to be run by several different
+growth chambers.
+\begin{itemize}
+\item Gained a familiarity with plant growth protocols
+\item Worked with other scientists to develop a standard
+\item Built a protocol-to-setpoint compiler in Rust
+\item Created a web tool for protocol compilation in WASM
+\item Added a dynamic JS graph for protocol visualisation
+\end{itemize}
+
+\subsection*{Peptidoglycomics Tool Development (2021)\\\textmd{\emph{Placement Work
+    in the Mesnage Lab, Sheffield UK}}}
+\noindent
+While there exists a wealth of tools dedicated to the analysis of mass
+spectrometry data from proteomics experiments, the same cannot be said for those
+focusing on peptidoglycan. I helped to fill this gap by integrating the recently
+published PGFinder tool with a downstream MS/MS analysis program developed
+in-house.
+\begin{itemize}
+\item Characterised peptidoglycan via LC-MS and MS/MS
+\item Developed a tool for predicting PG fragments
+\item Identified and fixed a bug in MS/MS ion generation
+\item Validated pipeline via manual spectrum inspection
+\end{itemize}
+
+\subsection*{Rhizobium \& Peptidoglycan Hydrolase Reviews
+  (2020-2021)\\\textmd{\emph{Mini-Reviews in Molecular Biology} – \url{https://bit.ly/3qgB6OQ}}}
+\noindent
+Trawling through the literature, I completed two mini-reviews on the
+rhizobium-legume symbiosis and the regulation of peptidoglycan hydrolases. Both
+papers were limited to no more than 2000 words of body text, so writing in a
+clear and concise fashion was critical to getting the full picture across.
+\begin{itemize}
+\item Distilled complex topics into digestible sections
+\item Managed 70+ in-text references using Zotaro
+\item Generated figures using PyMOL, GIMP, and Inkscape
+\item Professionally typeset the report in \LaTeX
+\end{itemize}
+
+\subsection*{Development Officer \& Workshop Instructor
+  (2020-2021)\\\textmd{\emph{Part of the Sheffield Bionics Society} – \url{https://bit.ly/3esFyUZ}}}
+\noindent
+Many passionate students join Sheffield Bionics every year but lack the
+technical background needed to keep up with the senior members. To address this,
+I founded Bionics Bootcamp – designed to get members up to speed with
+programming, electronics, and mechanical design.
+\begin{itemize}
+\item Developed lessons on Python, CAD, ML, and circuitry
+\item Created worksheets for reinforcing taught concepts
+\item Recorded 30+ hours of live-streamed lesson content
+\item Archived the course on a dedicated student website
+\end{itemize}
+
+\untagged{short}{
 \subsection*{Programming Mentor \& Workshop Instructor
-  (2018-Current)\\\textmd{\emph{Volunteer Teaching at the University, Sheffield UK}}}
+  (2018-2021)\\\textmd{\emph{Volunteer Teaching at the University, Sheffield UK}}}
 \noindent
 For the past couple of years I've been either helping to teach Python via
 organisations like Cookies and Code, or have been running programming workshops
@@ -135,9 +199,26 @@ instructor, working with both individuals and large groups.
 \item Demonstrated organisational and interpersonal skills
 \item Developed existing skills in computer programming
 \item Helped others leverage computation in their research
+\end{itemize}}
+
+\subsection*{Software Lead \& Co-Presenter (2019)\\\textmd{\emph{Member of the
+    University iGEM Team, Sheffield UK}}}
+\noindent
+iGEM is a synthetic biology competition involving universities from around the
+globe. Our team designed a low-cost, open-source microplate reader for use in
+community labs. I developed the software that powered our device and presented
+our project at the Jamboree in Boston, Massachusetts.
+\begin{itemize}
+\item Developed low-level firmware for an ESP32 in C
+\item Built a web-interface using HTML, CSS, and JS
+\item Displayed an aptitude for project presentation
+\item Exercised team communication and planning skills
+\item Awarded Best Presentation in the UK
+\item Won Best Open Project and Gold Medal in Boston
 \end{itemize}
 
-\subsection*{Lost in Translation: Proteins Post-Expression (2019)\\\textmd{\emph{Scientific Poster} — \url{http://bit.ly/36bKMPG}}}
+\untagged{short}{
+\subsection*{Lost in Translation: Proteins Post-Expression (2019)\\\textmd{\emph{Scientific Poster} – \url{http://bit.ly/36bKMPG}}}
 \noindent
 Scanning the literature, I stockpiled information regarding the
 post-translational modification and trafficking of proteins. From this body of
@@ -147,10 +228,11 @@ poster — striking the balance between rigour and brevity.
 \item Selected key points from a large body of research
 \item Demonstrated a competency in graphical design
 \item Elucidated the connections between concepts 
-\end{itemize}
+\end{itemize}}
 
+\untagged{short}{
 \subsection*{Creepy Phenomena: An Investigation of Viscoelasticity
-  (2019)\\\textmd{\emph{Scientific Report} — \url{http://bit.ly/2PkNP2b}}}
+  (2019)\\\textmd{\emph{Scientific Report} – \url{http://bit.ly/2PkNP2b}}}
 \noindent
 As part of a university physics course, I wrote a report analysing an
 experimental video showcasing a particular viscoelastic model. Working backwards
@@ -160,8 +242,9 @@ the system were calculated.\par
 \item Used maths and statistics to model a physical system
 \item Demonstrated writing and problem solving skills
 \item Created a report using LaTeX, R, and Knitr
-\end{itemize}
+\end{itemize}}
 
+\untagged{short}{
 \subsection*{Founder of PRA Robotics (2014-2018)\\\textmd{\emph{Prospect Ridge
     Academy, Colorado USA}}}
 \noindent
@@ -174,10 +257,11 @@ members and continues foster students' interest in robotics.
 \item Competed as finalists in the FTC State Championship
 \item Developed skills in autonomous control engineering
 \item Showed leadership skills by managing a large team
-\end{itemize}
+\end{itemize}}
 
+\untagged{short}{
 \subsection*{\textbf{\texttt{FTC\_HTTP}}: Wireless FTC Robot Programming Tool
-  (2017)\\\textmd{\emph{Cross-platform CLI Application} — \url{http://bit.ly/ftc_http}}}
+  (2017-2021)\\\textmd{\emph{Cross-platform CLI Application} – \url{http://bit.ly/ftc_http}}}
 \noindent
 FTC teams used to be forced to choose between two programming toolchains: either
 a 5GB+ install and minute-long programming cycles, or an under-featured
@@ -190,8 +274,9 @@ less than 8MB.
 \item Demonstrated skills in Rust, HTTP, and Git
 \item Produced documentation and a video tutorial
 \item Shared the application with others during FTC events
-\end{itemize}
+\end{itemize}}
 
+\untagged{short}{
 \subsection*{Assistant Researcher (2016-2017)\\\textmd{\emph{Summer Placement at Avidity LLC, Colorado USA}}}
 \noindent
 During my time at Avidity, I designed a set of DNA tethers for use in
@@ -201,26 +286,32 @@ explored the manufacture of lateral flow assays on an aluminium surface.
 \item Developed extensive wet-lab and digital biology skills
 \item Applied recombinant DNA technologies
 \item Showcased an aptitude for independent research
-\end{itemize}
+\end{itemize}}
 
 % DIRTY CHUNK !!!
-
+\tagged{comment}{
 Eventually I need to add a section for my L3 project – unfortunately I'm not
 quite at the point where I can link to anything there...
 
 New Experience:
 
 Add stuff about Bionics here (taught programming, electronics, and design)
+https://bit.ly/3esFyUZ
 
-Evolutor is my engineering magnum opus so far, 3D design, electronics, and software
+% Evolutor is my engineering magnum opus so far, 3D design, electronics, and software
 
-PGFinder work + Graph Generator + MS/MS pipeline with Mesnage
+% PGFinder work + Graph Generator + MS/MS pipeline with Mesnage
 
-Growbotics work is an in to the plant side of things!
+% Growbotics work is an in to the plant side of things!
 
-Add my essays about Rhizobia & Hydrolases in one section here
+% Add my essays about Rhizobia & Hydrolases in one section here
+% https://bit.ly/3qgB6OQ
+
+% Keep iGEM!
 
 -- LESS IMPORTANT STUFF --
+
+Bionics ML work with Thomas Thomas
 
 Ethical Hacking, more teaching experience in Cyber security / Linux fields
 
@@ -237,10 +328,12 @@ PAL teaching of biology to first-year students
 
 Additional Work
 
-Move the poster and report from bioengineering + ftc\_http here (keep long
-version too behind a generation flag!)
+% Move the poster and report from bioengineering + ftc\_http here (keep long
+% version too behind a generation flag!)
 
 Zellij and Exercism will likely end up here!
+
+% Add my Haskell Domino project! https://bit.ly/3qoQpVx
 
 Miscellaneous
 
@@ -264,33 +357,62 @@ Hiking
 Reading / Writing (Technical, Political / Philosophical, Fiction)
 Rock climbing / bouldering
 Music (indie rubbish for years)
-
+German!
+}
 % END DIRTY CHUNK
 
 \onecolumn
 \setulcolor{hellblau}
 \section*{\ul{ADDITIONAL WORK}}
+
 \subsection*{Personal Web Server (2015-Current)\\\textmd{\emph{File-Sync, VPN,
-    DLNA, FTP, Games, and Website} — \url{http://thelostlambda.xyz/}}}
+    DLNA, FTP, Games, Blockchain, and Website} — \url{http://thelostlambda.xyz/}}}
+
+\subsection*{Haskell Fives-and-Threes Dominoes AI (2020)\\\textmd{\emph{A
+    Tournament-Winning Dominoes AI and Accompanying Performance Report} —
+    \url{https://bit.ly/3qoQpVx}}}
+
 \subsection*{Sickle Cell Disease: Symptoms, Molecular Basis, and Treatments
-(2019)\\\textmd{\emph{A Review Focused on Sickle Cell Pathogenesis} — \url{http://bit.ly/2E7Yu9x}}}
+(2019)\\\textmd{\emph{A Mini-Review Focused on Sickle Cell Pathogenesis} — \url{http://bit.ly/2E7Yu9x}}}
+
+\tagged{short}{
+\subsection*{Lost in Translation: Proteins Post-Expression
+  (2019)\\\textmd{\emph{Scientific Poster on the Post-Translational Modification
+    and Transport of Proteins} — \url{http://bit.ly/36bKMPG}}}}
+
+\subsection*{Under Pressure — Hydrostatics and Elastic Tube Distention
+  (2019)\\\textmd{\emph{Modelling a Biophysical System from Image Data} — \url{http://bit.ly/2qMQmYA}}}
+
+\tagged{short}{
+\subsection*{Creepy Phenomena: An Investigation of Viscoelasticity
+  (2019)\\\textmd{\emph{Mathematical Analysis of a Physical System from Video Footage} — \url{http://bit.ly/2PkNP2b}}}}
+
 \subsection*{Tissue Who? — A Foray into Histology and Tissue Identification
   (2019)\\\textmd{\emph{A Short Histology Primer \& Lab Report} —
     \url{http://bit.ly/2ooernJ}}}
-\subsection*{Under Pressure — Hydrostatics and Elastic Tube Distention
-  (2019)\\\textmd{\emph{Modelling a Biophysical System from Data} — \url{http://bit.ly/2qMQmYA}}}
+
 \subsection*{In Vivo Detection and Signaling of Arbitrary DNA Sequences
   (2018)\\\textmd{\emph{Highschool Capstone Project Exploring a Novel Use for
     CRISPR} — \url{http://bit.ly/2pbA9fk}}}
+
 \subsection*{Pokéstats — What Type Of Pokemon Is The Match For You?
   (2018)\\\textmd{\emph{A Statistical Report Exploring a Large Pokémon Dataset} — \url{http://bit.ly/2FVjMqh}}}
+
 \subsection*{The Regicide of the Fisher King (2018)\\\textmd{\emph{AP English
     Literature Modernism Essay} — \url{http://bit.ly/2FHoYSy}}}
+
 \subsection*{Honors Physics “Build a Planet” Project (2017)\\\textmd{\emph{Exploring and
     Mathematically Modelling the Physics of a Fictional Planet} — \url{http://bit.ly/2IA9f5F}}}
+
+\tagged{short}{
+\subsection*{\textbf{\texttt{FTC\_HTTP}} Programming Tool (2017)\\\textmd{\emph{A Cross-Platform
+    Application for the Wireless Programming of FTC Robots} —
+    \url{http://bit.ly/ftc_http}}}}
+
 \setulcolor{rot}
 \section*{\ul{SELECTED AWARDS \& CERTIFICATES}}
 \begin{itemize}
+\item Phil Green Trophy for Best Haskell Dominoes AI in COM2108 Tournament (2020)
 \item Won Best Open Project \& Gold Medal during iGEM Jamboree (2019)
 \item Awarded Best Presentation during iGEM UK Meetup (2019)
 \item Best Communicated Solution during EWB Global Engineering Challenge (2019)
@@ -306,19 +428,26 @@ Music (indie rubbish for years)
 \setulcolor{grun}
 \section*{\ul{HOBBIES \& INTERESTS}}
 \noindent
-I'm into just about anything that bytes. When I'm not fiddling with programming
-or one of my computers, I indulge myself in video games. I've built the computer
-I play games on and have helped a number of others do the same. Since coming to
-Uni, I've developed an interest in cybersecurity and have joined the Sheffield
-Ethical Student Hackers.
+%Computers (Building, Games, Programming, Homelab)
+%Photography
+%Hiking
+%Reading / Writing (Technical, Political / Philosophical, Fiction)
+%Rock climbing / bouldering
+%Music (indie rubbish for years)
+%German!
 
-Aside from computers, I've recently taken up photography. I can't draw to save
-my life, but I think I've gotten rather good at stealing art from
-nature. Photography for me is a fun blend of technical knowledge and artistic
-challenge.
+I'm into just about anything that bytes – I built my first PC at 14 and have
+used it to teach myself programming, learn how to manage a Linux server, and
+lose horribly to 8 year olds in online video games. Though I can't draw to save
+my life, I've recently taken up digital photography and think I've gotten rather
+good at stealing art from nature.
 
-Finally, I love to read and to write. I often end up doing lots of technical
-reading as a consequence of my computer science hobby, but certainly enjoy an
-awful fantasy novel when I can find the time for it.
+When I manage to get out of my room, I quite enjoy both hiking and rock
+climbing. When I'm stuck in my room, I listen to 125,902 minutes of indie music
+to pass a pandemic. Spotify claims I'm a fan of ``Midwestern Emo'' – take that
+as you will. Finally, I love to read and write. I've recently taking to reading
+some more diverse non-fiction (primarily regarding political / philosophical
+topics), but I certainly enjoy an awful fantasy novel when I can find the time
+for it.
 \end{document}
  
