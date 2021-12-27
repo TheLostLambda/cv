@@ -2,13 +2,13 @@
 \documentclass[twocolumn, a4paper, fontsize=9pt, headsepline, footsepline]{scrartcl}
 \usepackage[
   top=25mm,
-  bottom=19mm,
+  bottom=21mm,
   left=13mm,
   right=13mm,
   headheight=15mm,
+  footskip=15.5mm
 ]{geometry}
 \setlength{\footheight}{12mm}
-\usepackage[hidelinks]{hyperref}
 
 % Change the theme here (light, dark, BW, blue, green)
 \usepackage{tagging}
@@ -59,10 +59,12 @@
 \definecolor{lila}{RGB}{181,68,110}
 \definecolor{hellblau}{RGB}{10,205,187}
 \definecolor{grun}{RGB}{112,174,110}
+\definecolor{link}{RGB}{50,90,170}
 \tagged{BW}{\definecolor{rot}{RGB}{0,0,0}}
 \tagged{BW}{\definecolor{lila}{RGB}{0,0,0}}
 \tagged{BW}{\definecolor{hellblau}{RGB}{0,0,0}}
 \tagged{BW}{\definecolor{grun}{RGB}{0,0,0}}
+\tagged{BW}{\definecolor{link}{RGB}{0,0,0}}
 \tagged{green}{\definecolor{rot}{RGB}{122, 199, 76}}
 \tagged{green}{\definecolor{lila}{RGB}{122, 199, 76}}
 \tagged{green}{\definecolor{hellblau}{RGB}{122, 199, 76}}
@@ -74,12 +76,15 @@
 \tagged{dark}{\pagecolor{bg}}
 \tagged{dark}{\color{fg}}
 
+\usepackage[hidelinks, colorlinks=true, urlcolor=link]{hyperref}
+
 \usepackage{soul}
 
 \usepackage{enumitem}
 \setlist{nosep}
 
 \begin{document}
+\onehalfspacing
 \setulcolor{rot}
 \setul{}{2pt}
 \section*{\ul{OBJECTIVE}}
@@ -91,28 +96,28 @@ in the field to further mankind's understanding of the world.
 \setulcolor{lila}
 \section*{\ul{FORMAL EDUCATION}}
 \subsection*{Molecular Biology at The University of Sheffield (2019-2022)}
-\onehalfspacing
+\vspace{-5pt}
 \emph{Weighted Average: 86.50\%}\par
-\emph{Received the Valerie Broomhead Prize}\par
-\emph{Received the Paul Hancock Prize}\par
+\emph{Valerie Broomhead Prize – \emph{Best Level 1 Practical Mark}}\par
+\emph{Paul Hancock Prize – \emph{Best Level 2 Practical Mark}}\par
 
 \subsection*{Bioengineering at The University of Sheffield (2018-2019)}
-\onehalfspacing
+\vspace{-5pt}
 \emph{Weighted Average: 89.25\%}\par
-\emph{Received the Sir Harold West Award}
+\emph{Sir Harold West Award  – \emph{Academic \& Personal Promise}}
 
-\subsection*{Prospect Ridge Academy High School (2014-2018)}
-\onehalfspacing
-\emph{GPA: 4.741 (4.00)}\par
+\subsection*{Prospect Ridge Academy High School, USA (2014-2018)}
+\vspace{-5pt}
+\emph{GPA: 4.74 (4.00)}\par
 \emph{Graduated Summa Cum Laude}\par
-\emph{Received National AP Scholar Award}\par
-\emph{Received First Place for Senior Capstone Project}
+\emph{National AP Scholar Award}\par
+\emph{First Place for Senior Capstone Project}
 
 \setulcolor{grun}
 \section*{\ul{EXPERIENCE}}
 
 \subsection*{Mechanical, Electrical, and Software Engineer
-  (2020-2021)\\\textmd{\emph{Bioreactor Development for Evolutor, Sheffield UK}}}
+  (2020-Current)\\\textmd{\emph{Bioreactor Development for Evolutor, Sheffield UK}}}
 \noindent
 Advised by Dr. Tuck Seng Wong from Chemical and Biological Engineering, I
 developed a compact, inexpensive prototype bioreactor optimised for carrying out
@@ -128,7 +133,7 @@ optimisation of industrially important microbe strains.
 \end{itemize}
 
 \subsection*{Plant Growth Protocol Standardisation
-  (2020-2021)\\\textmd{\emph{Designer and Developer at Grobotic Systems, Sheffield UK}}}
+  (2020-Current)\\\textmd{\emph{Designer and Developer at Grobotic Systems, Sheffield UK}}}
 \noindent
 Grobotic Systems is one of many companies producing growth chambers for use in
 plant science; unfortunately, there is no standard for how the protocols run by
@@ -143,14 +148,14 @@ growth chambers.
 \item Added a dynamic JS graph for protocol visualisation
 \end{itemize}
 
-\subsection*{Peptidoglycomics Tool Development (2021)\\\textmd{\emph{Placement Work
+\subsection*{Peptidoglycomics Tool Development (Summer 2021)\\\textmd{\emph{Placement Work
     in the Mesnage Lab, Sheffield UK}}}
 \noindent
-While there exists a wealth of tools dedicated to the analysis of mass
-spectrometry data from proteomics experiments, the same cannot be said for those
-focusing on peptidoglycan. I helped to fill this gap by integrating the recently
-published PGFinder tool with a downstream MS/MS analysis program developed
-in-house.
+A wealth of tools are available for the analysis of mass spectrometry data from
+proteomics experiments; however, only one is dedicated to peptidoglycan
+structural analysis. I helped improve the recently published PGFinder tool by
+integrating it with a downstream MS/MS analysis program developed in the Mesnage
+lab.
 \begin{itemize}
 \item Characterised peptidoglycan via LC-MS and MS/MS
 \item Developed a tool for predicting PG fragments
@@ -158,22 +163,22 @@ in-house.
 \item Validated pipeline via manual spectrum inspection
 \end{itemize}
 
-\subsection*{Rhizobium \& Peptidoglycan Hydrolase Reviews
-  (2020-2021)\\\textmd{\emph{Mini-Reviews in Molecular Biology} – \url{https://bit.ly/3qgB6OQ}}}
+\subsection*{Peptidoglycan Hydrolase \& \emph{Rhizobium} Reviews
+  (2020/2021)\\\textmd{\emph{Mini-Reviews in Molecular Biology} – \url{https://bit.ly/3qgB6OQ}}}
 \noindent
-Trawling through the literature, I completed two mini-reviews on the
-rhizobium-legume symbiosis and the regulation of peptidoglycan hydrolases. Both
-papers were limited to no more than 2000 words of body text, so writing in a
-clear and concise fashion was critical to getting the full picture across.
+I completed two mini-reviews on the Rhizobium-legume symbiosis and the
+regulation of peptidoglycan hydrolases. Both papers were limited to 2000 words
+of body text, so writing in a clear and concise fashion was critical to getting
+the full picture across.
 \begin{itemize}
 \item Distilled complex topics into digestible sections
 \item Managed 70+ in-text references using Zotaro
-\item Generated figures using PyMOL, GIMP, and Inkscape
+\item Generated figures using PyMOL, GIMP \& Inkscape
 \item Professionally typeset the report in \LaTeX
 \end{itemize}
 
 \subsection*{Development Officer \& Workshop Instructor
-  (2020-2021)\\\textmd{\emph{Part of the Sheffield Bionics Society} – \url{https://bit.ly/3esFyUZ}}}
+  (2020-2021)\\\textmd{\emph{Part of the Sheffield Bionics Society} – \url{https://bit.ly/3qs5xSf}}}
 \noindent
 Many passionate students join Sheffield Bionics every year but lack the
 technical background needed to keep up with the senior members. To address this,
@@ -287,7 +292,99 @@ explored the manufacture of lateral flow assays on an aluminium surface.
 \item Applied recombinant DNA technologies
 \item Showcased an aptitude for independent research
 \end{itemize}}
+\pagebreak
 
+\onecolumn
+\setulcolor{hellblau}
+\section*{\ul{ADDITIONAL WORK}}
+\subsection*{Personal Web Server (2015-Current)\\\hspace{14.22636pt}\textmd{\emph{File-Sync, VPN,
+    DLNA, FTP, Games, Blockchain, and Website} —
+    \url{http://thelostlambda.xyz/}}}
+
+\subsection*{Haskell Fives-and-Threes Dominoes AI (2020)\\\hspace{14.22636pt}\textmd{\emph{A
+    Tournament-Winning Dominoes AI and Accompanying Performance Report} —
+    \url{https://bit.ly/3qoQpVx}}}
+
+\subsection*{Sickle Cell Disease: Symptoms, Molecular Basis, and Treatments
+(2019)\\\hspace{14.22636pt}\textmd{\emph{A Mini-Review Focused on Sickle Cell
+    Pathogenesis} — \url{http://bit.ly/2E7Yu9x}}}
+
+\tagged{short}{
+\subsection*{Lost in Translation: Proteins Post-Expression
+  (2019)\\\hspace{14.22636pt}\textmd{\emph{Scientific Poster on the
+    Post-Translational Modification and Transport of Proteins} —
+    \url{http://bit.ly/36bKMPG}}}}
+
+\subsection*{Under Pressure — Hydrostatics and Elastic Tube Distention
+  (2019)\\\hspace{14.22636pt}\textmd{\emph{Modelling a Biophysical System from
+    Image Data} — \url{http://bit.ly/2qMQmYA}}}
+
+\tagged{short}{
+\subsection*{Creepy Phenomena: An Investigation of Viscoelasticity
+  (2019)\\\hspace{14.22636pt}\textmd{\emph{Mathematical Analysis of a Physical
+    System from Video Footage} — \url{http://bit.ly/2PkNP2b}}}}
+
+\subsection*{Tissue Who? — A Foray into Histology and Tissue Identification
+  (2019)\\\hspace{14.22636pt}\textmd{\emph{A Short Histology Primer \& Lab
+    Report} — \url{http://bit.ly/2ooernJ}}}
+
+\subsection*{In Vivo Detection and Signaling of Arbitrary DNA Sequences
+  (2018)\\\hspace{14.22636pt}\textmd{\emph{Highschool Capstone Project Exploring
+    a Novel Use for CRISPR} — \url{http://bit.ly/2pbA9fk}}}
+
+\subsection*{Pokéstats — What Type Of Pokemon Is The Match For You?
+  (2018)\\\hspace{14.22636pt}\textmd{\emph{A Statistical Report Exploring a
+    Large Pokémon Dataset} — \url{http://bit.ly/2FVjMqh}}}
+
+\subsection*{The Regicide of the Fisher King (2018)\\\hspace{14.22636pt}\textmd{\emph{AP English
+    Literature Modernism Essay} — \url{http://bit.ly/2FHoYSy}}}
+
+\subsection*{Honors Physics “Build a Planet” Project (2017)\\\hspace{14.22636pt}\textmd{\emph{Exploring and
+    Mathematically Modelling the Physics of a Fictional Planet} —
+    \url{http://bit.ly/2IA9f5F}}}
+
+\tagged{short}{
+\subsection*{\textbf{\texttt{FTC\_HTTP}} Programming Tool (2017)\\\hspace{14.22636pt}\textmd{\emph{A Cross-Platform
+    Application for the Wireless Programming of FTC Robots} —
+    \url{http://bit.ly/ftc_http}}}}
+
+\setulcolor{rot}
+\section*{\ul{AWARDS \& CERTIFICATES}}
+\begin{itemize}
+\item Phil Green Trophy for Best Haskell Dominoes AI in COM2108 Tournament (2020)
+\item Won Best Open Project \& Gold Medal during iGEM Jamboree (2019)
+\item Awarded Best Presentation during iGEM UK Meetup (2019)
+\item Best Communicated Solution during EWB Global Engineering Challenge (2019)
+\item Linnaeus Award for Excellence in Biology (2018)
+\item Hacker Award for Excellence in Computer Science (2018)
+\item National Honor Society (2017-2018)
+\item Prospect Ridge Academy High Honor Roll (2015-2018)
+\item Design Award \& Finalist Alliance at FTC State Championship (2017-2018)
+\item Second place in Junior Energy and Transportation at Colorado Science and
+  Engineering Fair (2014)
+\item First place in Alternative Fuels at Denver Metro Science Fair (2014)
+\end{itemize}
+\setulcolor{grun}
+\section*{\ul{HOBBIES \& INTERESTS}}
+\noindent
+Going to re-write this with a bit more substance and a bit less silly – hang tight.
+\comment{
+I'm into just about anything that bytes – I built my first PC at 14 and have
+used it to teach myself programming, learn how to manage a Linux server, and
+lose horribly to 8 year olds in online video games. Though I can't draw to save
+my life, I've recently taken up digital photography and think I've gotten rather
+good at stealing art from nature.
+
+When I manage to get out of my room, I quite enjoy both hiking and rock
+climbing. When I'm stuck in my room, I listen to 125,902 minutes of indie music
+to pass a pandemic. Spotify claims I'm a fan of ``Midwestern Emo'' – take that
+as you will. Finally, I love to read and write. I've recently taking to reading
+some more diverse non-fiction (primarily regarding political / philosophical
+topics), but I certainly enjoy an awful fantasy novel when I can find the time
+for it.}
+\pagebreak
+\end{document}
+ 
 % DIRTY CHUNK !!!
 \tagged{comment}{
 Eventually I need to add a section for my L3 project – unfortunately I'm not
@@ -295,8 +392,8 @@ quite at the point where I can link to anything there...
 
 New Experience:
 
-Add stuff about Bionics here (taught programming, electronics, and design)
-https://bit.ly/3esFyUZ
+% Add stuff about Bionics here (taught programming, electronics, and design)
+% https://bit.ly/3esFyUZ
 
 % Evolutor is my engineering magnum opus so far, 3D design, electronics, and software
 
@@ -360,94 +457,3 @@ Music (indie rubbish for years)
 German!
 }
 % END DIRTY CHUNK
-
-\onecolumn
-\setulcolor{hellblau}
-\section*{\ul{ADDITIONAL WORK}}
-
-\subsection*{Personal Web Server (2015-Current)\\\textmd{\emph{File-Sync, VPN,
-    DLNA, FTP, Games, Blockchain, and Website} — \url{http://thelostlambda.xyz/}}}
-
-\subsection*{Haskell Fives-and-Threes Dominoes AI (2020)\\\textmd{\emph{A
-    Tournament-Winning Dominoes AI and Accompanying Performance Report} —
-    \url{https://bit.ly/3qoQpVx}}}
-
-\subsection*{Sickle Cell Disease: Symptoms, Molecular Basis, and Treatments
-(2019)\\\textmd{\emph{A Mini-Review Focused on Sickle Cell Pathogenesis} — \url{http://bit.ly/2E7Yu9x}}}
-
-\tagged{short}{
-\subsection*{Lost in Translation: Proteins Post-Expression
-  (2019)\\\textmd{\emph{Scientific Poster on the Post-Translational Modification
-    and Transport of Proteins} — \url{http://bit.ly/36bKMPG}}}}
-
-\subsection*{Under Pressure — Hydrostatics and Elastic Tube Distention
-  (2019)\\\textmd{\emph{Modelling a Biophysical System from Image Data} — \url{http://bit.ly/2qMQmYA}}}
-
-\tagged{short}{
-\subsection*{Creepy Phenomena: An Investigation of Viscoelasticity
-  (2019)\\\textmd{\emph{Mathematical Analysis of a Physical System from Video Footage} — \url{http://bit.ly/2PkNP2b}}}}
-
-\subsection*{Tissue Who? — A Foray into Histology and Tissue Identification
-  (2019)\\\textmd{\emph{A Short Histology Primer \& Lab Report} —
-    \url{http://bit.ly/2ooernJ}}}
-
-\subsection*{In Vivo Detection and Signaling of Arbitrary DNA Sequences
-  (2018)\\\textmd{\emph{Highschool Capstone Project Exploring a Novel Use for
-    CRISPR} — \url{http://bit.ly/2pbA9fk}}}
-
-\subsection*{Pokéstats — What Type Of Pokemon Is The Match For You?
-  (2018)\\\textmd{\emph{A Statistical Report Exploring a Large Pokémon Dataset} — \url{http://bit.ly/2FVjMqh}}}
-
-\subsection*{The Regicide of the Fisher King (2018)\\\textmd{\emph{AP English
-    Literature Modernism Essay} — \url{http://bit.ly/2FHoYSy}}}
-
-\subsection*{Honors Physics “Build a Planet” Project (2017)\\\textmd{\emph{Exploring and
-    Mathematically Modelling the Physics of a Fictional Planet} — \url{http://bit.ly/2IA9f5F}}}
-
-\tagged{short}{
-\subsection*{\textbf{\texttt{FTC\_HTTP}} Programming Tool (2017)\\\textmd{\emph{A Cross-Platform
-    Application for the Wireless Programming of FTC Robots} —
-    \url{http://bit.ly/ftc_http}}}}
-
-\setulcolor{rot}
-\section*{\ul{SELECTED AWARDS \& CERTIFICATES}}
-\begin{itemize}
-\item Phil Green Trophy for Best Haskell Dominoes AI in COM2108 Tournament (2020)
-\item Won Best Open Project \& Gold Medal during iGEM Jamboree (2019)
-\item Awarded Best Presentation during iGEM UK Meetup (2019)
-\item Best Communicated Solution during EWB Global Engineering Challenge (2019)
-\item Linnaeus Award for Excellence in Biology (2018)
-\item Hacker Award for Excellence in Computer Science (2018)
-\item National Honor Society (2017-2018)
-\item Prospect Ridge Academy High Honor Roll (2015-2018)
-\item Design Award \& Finalist Alliance at FTC State Championship (2017-2018)
-\item Second place in Junior Energy and Transportation at Colorado Science and
-  Engineering Fair (2014)
-\item First place in Alternative Fuels at Denver Metro Science Fair (2014)
-\end{itemize}
-\setulcolor{grun}
-\section*{\ul{HOBBIES \& INTERESTS}}
-\noindent
-%Computers (Building, Games, Programming, Homelab)
-%Photography
-%Hiking
-%Reading / Writing (Technical, Political / Philosophical, Fiction)
-%Rock climbing / bouldering
-%Music (indie rubbish for years)
-%German!
-
-I'm into just about anything that bytes – I built my first PC at 14 and have
-used it to teach myself programming, learn how to manage a Linux server, and
-lose horribly to 8 year olds in online video games. Though I can't draw to save
-my life, I've recently taken up digital photography and think I've gotten rather
-good at stealing art from nature.
-
-When I manage to get out of my room, I quite enjoy both hiking and rock
-climbing. When I'm stuck in my room, I listen to 125,902 minutes of indie music
-to pass a pandemic. Spotify claims I'm a fan of ``Midwestern Emo'' – take that
-as you will. Finally, I love to read and write. I've recently taking to reading
-some more diverse non-fiction (primarily regarding political / philosophical
-topics), but I certainly enjoy an awful fantasy novel when I can find the time
-for it.
-\end{document}
- 
