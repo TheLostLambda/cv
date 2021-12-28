@@ -42,8 +42,9 @@
   390609\hspace{2mm}\faPhoneSquare
   \\ b.j.rady@gmail.com\hspace{2mm}\faEnvelopeSquare} \cfoot{}
 
-\ifoot{\textbf{REFERENCES}\\\footnotesize Dr. Stéphane Mesnage, Personal Tutor
-  \& Lecturer in Microbiology <s.mesnage@sheffield.ac.uk>\\ Dr. Tuck Seng Wong,
+% Dr. Stéphane Mesnage, Personal Tutor \& Lecturer in Microbiology <s.mesnage@sheffield.ac.uk>
+\ifoot{\textbf{REFERENCES}\\\footnotesize Dr. Egbert Hoiczyk, Project Supervisor
+  \& Lecturer in Microbiology <e.hoiczyk@sheffield.ac.uk>\\ Dr. Tuck Seng Wong,
   Lecturer in Chemical \& Biological Engineering <t.wong@sheffield.ac.uk>}
 \ofoot{linkedin.com/in/bjrady/\hspace{2mm}\faLinkedinSquare\\thelostlambda.xyz\hspace{2mm}\faGlobe}
 
@@ -59,7 +60,7 @@
 \definecolor{lila}{RGB}{181,68,110}
 \definecolor{hellblau}{RGB}{10,205,187}
 \definecolor{grun}{RGB}{112,174,110}
-\definecolor{link}{RGB}{50,90,170}
+\definecolor{link}{RGB}{40,80,180}
 \tagged{BW}{\definecolor{rot}{RGB}{0,0,0}}
 \tagged{BW}{\definecolor{lila}{RGB}{0,0,0}}
 \tagged{BW}{\definecolor{hellblau}{RGB}{0,0,0}}
@@ -73,6 +74,7 @@
 \tagged{blue}{\definecolor{lila}{RGB}{99, 121, 134}}
 \tagged{blue}{\definecolor{hellblau}{RGB}{99, 121, 134}}
 \tagged{blue}{\definecolor{grun}{RGB}{99, 121, 134}}
+\tagged{dark}{\definecolor{link}{RGB}{110,150,250}}
 \tagged{dark}{\pagecolor{bg}}
 \tagged{dark}{\color{fg}}
 
@@ -89,7 +91,7 @@
 \setul{}{2pt}
 \section*{\ul{OBJECTIVE}}
 \noindent
-A perpetually curious student with a keen interest in molecular biology and
+A perpetually curious student with a keen interest in biological research and
 computer science. Seeking to engage in research and work alongside professionals
 in the field to further mankind's understanding of the world.
 
@@ -116,20 +118,52 @@ in the field to further mankind's understanding of the world.
 \setulcolor{grun}
 \section*{\ul{EXPERIENCE}}
 
-\subsection*{Mechanical, Electrical, and Software Engineer
-  (2020-Current)\\\textmd{\emph{Bioreactor Development for Evolutor, Sheffield UK}}}
+\subsection*{Peptidoglycomics Tool Development (Summer 2021)\\\textmd{\emph{Placement Work
+    in the Mesnage Lab, Sheffield UK}}}
 \noindent
-Advised by Dr. Tuck Seng Wong from Chemical and Biological Engineering, I
-developed a compact, inexpensive prototype bioreactor optimised for carrying out
-directed / adaptive evolution in an automated fashion – allowing for the
-optimisation of industrially important microbe strains.
+A wealth of tools are available for the analysis of mass spectrometry data from
+proteomics experiments; however, only one is dedicated to peptidoglycan
+structural analysis. I helped improve the recently published PGFinder tool by
+integrating it with a downstream MS/MS analysis program developed in the Mesnage
+lab.
 \begin{itemize}
-\item Leveraged CAD to prototype a reactor from scratch
-\item Manufactured reactor components via 3D printing
-\item Developed custom sensor and control electronics
-\item Created a dashboard in Svelte for reactor monitoring
-\item Experimentally characterised device performance
-\item Integrated user feedback into the device design
+\item Characterised peptidoglycan via LC-MS and MS/MS
+\item Developed a tool for predicting PG fragments
+\item Identified and fixed a bug in MS/MS ion generation
+\item Validated pipeline via manual spectrum inspection
+\end{itemize}
+
+\subsection*{Study of \emph{Myxococcus} Motility \& Sporulation (Autumn 2021)\\\textmd{\emph{Placement Work
+    in the Hoiczyk Lab, Sheffield UK}}}
+\noindent
+\emph{Myxococcus xanthus} is a model organism for motility, development, and
+multicellularity in bacteria. During my time in the lab, I generated disruption
+mutants to improve the purity of a protein isolation and designed a variety of
+novel experiments screening for the presence of a diffusible pheromone involved
+in fruiting body formation.
+\begin{itemize}
+\item Designed primers for deletion fragment generation
+\item Verified our construct via Sanger sequencing
+\item Transformed cells via heat shock \& electroporation
+\item Screened and counter-selected for deletion mutants
+\item Separated lysate proteins via gradient centrifugation
+\item Verified purification via PAGE, western blot, and EM
+\item Applied 3D printing to create novel agar moulds
+\item Visualised results using light and stereo microscopy
+\end{itemize}
+
+\subsection*{Peptidoglycan Hydrolase \& \emph{Rhizobium} Reviews
+  (2020/2021)\\\textmd{\emph{Mini-Reviews in Molecular Biology} – \url{https://bit.ly/3qgB6OQ}}}
+\noindent
+I completed two mini-reviews on the \emph{Rhizobium}-legume symbiosis and the
+regulation of peptidoglycan hydrolases. Both papers were limited to 2000 words
+of body text, so writing in a clear and concise fashion was critical to getting
+the full picture across.
+\begin{itemize}
+\item Distilled complex topics into digestible sections
+\item Managed 70+ in-text references using Zotero
+\item Generated figures using PyMOL, GIMP \& Inkscape
+\item Professionally typeset the reports in \LaTeX
 \end{itemize}
 
 \subsection*{Plant Growth Protocol Standardisation
@@ -148,35 +182,23 @@ growth chambers.
 \item Added a dynamic JS graph for protocol visualisation
 \end{itemize}
 
-\subsection*{Peptidoglycomics Tool Development (Summer 2021)\\\textmd{\emph{Placement Work
-    in the Mesnage Lab, Sheffield UK}}}
+\subsection*{Mechanical, Electrical, and Software Engineer
+  (2020-Current)\\\textmd{\emph{Bioreactor Development for Evolutor, Sheffield UK}}}
 \noindent
-A wealth of tools are available for the analysis of mass spectrometry data from
-proteomics experiments; however, only one is dedicated to peptidoglycan
-structural analysis. I helped improve the recently published PGFinder tool by
-integrating it with a downstream MS/MS analysis program developed in the Mesnage
-lab.
+Advised by Dr. Tuck Seng Wong from Chemical and Biological Engineering, I
+developed a compact, inexpensive prototype bioreactor optimised for carrying out
+directed / adaptive evolution in an automated fashion – allowing for the
+optimisation of industrially important microbe strains.
 \begin{itemize}
-\item Characterised peptidoglycan via LC-MS and MS/MS
-\item Developed a tool for predicting PG fragments
-\item Identified and fixed a bug in MS/MS ion generation
-\item Validated pipeline via manual spectrum inspection
+\item Leveraged CAD to prototype a reactor from scratch
+\item Manufactured reactor components via 3D printing
+\item Developed custom sensor and control electronics
+\item Created a dashboard in Svelte for reactor monitoring
+\item Experimentally characterised device performance
+\item Integrated user feedback into the device design
 \end{itemize}
 
-\subsection*{Peptidoglycan Hydrolase \& \emph{Rhizobium} Reviews
-  (2020/2021)\\\textmd{\emph{Mini-Reviews in Molecular Biology} – \url{https://bit.ly/3qgB6OQ}}}
-\noindent
-I completed two mini-reviews on the Rhizobium-legume symbiosis and the
-regulation of peptidoglycan hydrolases. Both papers were limited to 2000 words
-of body text, so writing in a clear and concise fashion was critical to getting
-the full picture across.
-\begin{itemize}
-\item Distilled complex topics into digestible sections
-\item Managed 70+ in-text references using Zotaro
-\item Generated figures using PyMOL, GIMP \& Inkscape
-\item Professionally typeset the report in \LaTeX
-\end{itemize}
-
+\untagged{short}{
 \subsection*{Development Officer \& Workshop Instructor
   (2020-2021)\\\textmd{\emph{Part of the Sheffield Bionics Society} – \url{https://bit.ly/3qs5xSf}}}
 \noindent
@@ -190,6 +212,7 @@ programming, electronics, and mechanical design.
 \item Recorded 30+ hours of live-streamed lesson content
 \item Archived the course on a dedicated student website
 \end{itemize}
+}
 
 \untagged{short}{
 \subsection*{Programming Mentor \& Workshop Instructor
@@ -212,7 +235,7 @@ instructor, working with both individuals and large groups.
 iGEM is a synthetic biology competition involving universities from around the
 globe. Our team designed a low-cost, open-source microplate reader for use in
 community labs. I developed the software that powered our device and presented
-our project at the Jamboree in Boston, Massachusetts.
+our project at conferences in Newcastle, UK and Boston, USA.
 \begin{itemize}
 \item Developed low-level firmware for an ESP32 in C
 \item Built a web-interface using HTML, CSS, and JS
@@ -301,6 +324,10 @@ explored the manufacture of lateral flow assays on an aluminium surface.
     DLNA, FTP, Games, Blockchain, and Website} —
     \url{http://thelostlambda.xyz/}}}
 
+\tagged{short}{
+\subsection*{Workshop Development for Sheffield Bionics Society
+  (2020-2021)\\\hspace{14.22636pt}\textmd{\emph{Video and Blog Content for Teaching Python, CAD, ML, and Electronics} – \url{https://bit.ly/3qs5xSf}}}}
+
 \subsection*{Haskell Fives-and-Threes Dominoes AI (2020)\\\hspace{14.22636pt}\textmd{\emph{A
     Tournament-Winning Dominoes AI and Accompanying Performance Report} —
     \url{https://bit.ly/3qoQpVx}}}
@@ -324,12 +351,13 @@ explored the manufacture of lateral flow assays on an aluminium surface.
   (2019)\\\hspace{14.22636pt}\textmd{\emph{Mathematical Analysis of a Physical
     System from Video Footage} — \url{http://bit.ly/2PkNP2b}}}}
 
+\untagged{short}{
 \subsection*{Tissue Who? — A Foray into Histology and Tissue Identification
   (2019)\\\hspace{14.22636pt}\textmd{\emph{A Short Histology Primer \& Lab
-    Report} — \url{http://bit.ly/2ooernJ}}}
+    Report} — \url{http://bit.ly/2ooernJ}}}}
 
 \subsection*{In Vivo Detection and Signaling of Arbitrary DNA Sequences
-  (2018)\\\hspace{14.22636pt}\textmd{\emph{Highschool Capstone Project Exploring
+  (2018)\\\hspace{14.22636pt}\textmd{\emph{High School Capstone Project Exploring
     a Novel Use for CRISPR} — \url{http://bit.ly/2pbA9fk}}}
 
 \subsection*{Pokéstats — What Type Of Pokemon Is The Match For You?
@@ -367,28 +395,33 @@ explored the manufacture of lateral flow assays on an aluminium surface.
 \setulcolor{grun}
 \section*{\ul{HOBBIES \& INTERESTS}}
 \noindent
-Going to re-write this with a bit more substance and a bit less silly – hang tight.
-\comment{
-I'm into just about anything that bytes – I built my first PC at 14 and have
-used it to teach myself programming, learn how to manage a Linux server, and
-lose horribly to 8 year olds in online video games. Though I can't draw to save
-my life, I've recently taken up digital photography and think I've gotten rather
-good at stealing art from nature.
+I'm into anything that bytes – I built my first PC at 14 and have used it to
+teach myself programming, learn how to manage a Linux server, and enjoy some
+video games. Though I don't care much for commercial projects, I've spent a
+large amount of my time contributing to open-source: developing infrastructure
+and course content for Exercism, authoring large portions of the Zellij terminal
+application, and countless smaller contributions.
+
+Alongside this has been an enduring interest in robotics: I founded PRA robotics
+at my high school and have been part of Avalon, Bionics, and Project Hex since
+coming to Uni – three different student-led robotics groups. My passion for
+learning extends to teaching, and I've represented my course as academic
+officer, tutored first year biologists, and delivered lessons in coding,
+engineering, and ethical hacking all across campus.
 
 When I manage to get out of my room, I quite enjoy both hiking and rock
-climbing. When I'm stuck in my room, I listen to 125,902 minutes of indie music
-to pass a pandemic. Spotify claims I'm a fan of ``Midwestern Emo'' – take that
-as you will. Finally, I love to read and write. I've recently taking to reading
-some more diverse non-fiction (primarily regarding political / philosophical
-topics), but I certainly enjoy an awful fantasy novel when I can find the time
-for it.}
+climbing, and though I can't draw to save my life, I've recently taken up
+digital photography and enjoy graphic design. I've been learning German for
+nearly four years now and my 125,902 minutes of listening to music in 2020 means
+I'm probably a bit obsessed with ``Midwestern Emo'', but I'm still waiting for
+the philosophy I've been reading and writing about to make sense of that...
 \pagebreak
 \end{document}
  
 % DIRTY CHUNK !!!
 \tagged{comment}{
-Eventually I need to add a section for my L3 project – unfortunately I'm not
-quite at the point where I can link to anything there...
+% Eventually I need to add a section for my L3 project – unfortunately I'm not
+% quite at the point where I can link to anything there...
 
 New Experience:
 
@@ -408,27 +441,26 @@ New Experience:
 
 -- LESS IMPORTANT STUFF --
 
-Bionics ML work with Thomas Thomas
+% Bionics ML work with Thomas Thomas
 
-Ethical Hacking, more teaching experience in Cyber security / Linux fields
+% Ethical Hacking, more teaching experience in Cyber security / Linux fields
 
-Exercism is a nice bit of open source teaching and programming work
+% Exercism is a nice bit of open source teaching and programming work
 
-Avalon was some electrical engineering experience and practice making PCBs
+% Avalon was some electrical engineering experience and practice making PCBs
 
-Zellij is my primary open-source project now – lots of good, international
-teamwork
+% Zellij is my primary open-source project now – lots of good, international teamwork
 
-MBB society as academic officer (working with staff)
+% MBB society as academic officer (working with staff)
 
-PAL teaching of biology to first-year students
+% PAL teaching of biology to first-year students
 
-Additional Work
+% Additional Work
 
 % Move the poster and report from bioengineering + ftc\_http here (keep long
 % version too behind a generation flag!)
 
-Zellij and Exercism will likely end up here!
+% Zellij and Exercism will likely end up here!
 
 % Add my Haskell Domino project! https://bit.ly/3qoQpVx
 
@@ -438,22 +470,22 @@ Add my nationality somewhere (so people know I'm international status)
 
 Add languages as well (mostly just English, obviously, but with a bit of German)
 
-Other open-source stuff could be worth mentioning...
+% Other open-source stuff could be worth mentioning...
 
 Starting up iGEM again is something that's noteworthy!
 
-Project Hex, more engineering / robotics / programming
+% Project Hex, more engineering / robotics / programming
 
-Add rock climbing to hobbies and interests!
+% Add rock climbing to hobbies and interests!
 
 Hobbies:
 
-Computers (Building, Games, Programming, Homelab)
-Photography
-Hiking
-Reading / Writing (Technical, Political / Philosophical, Fiction)
-Rock climbing / bouldering
+%Computers (Building, Games, Programming, Homelab)
+%Photography
+%Hiking
+%Reading / Writing (Technical, Political / Philosophical, Fiction)
+%Rock climbing / bouldering
 Music (indie rubbish for years)
-German!
+%German!
 }
 % END DIRTY CHUNK
